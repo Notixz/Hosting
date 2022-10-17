@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css\styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrabajoPagina</title>
+</head>
+<body>
+    <div id="mainHeader">
+        <ol id="mainListHeader">
+            <li>
+                <button onclick="mostrarInicio();"">Inicio</button>
+            </li>
+            <li>
+                <button onclick="mostrarTablas();"">Tablas</button>
+            </li>
+            <li>
+                <button onclick="mostrarVideo();"">Video</button>
+            </li>
+            <li>
+                <button onclick="mostrarFormulario();"">Formulario</button>
+            </li>
+        </ol>
+    </div>
+    <div id="mainBanner">
+        <img src="img/mainBanner.png">
+    </div>
+    <div id="mainContenedor">
+        <div id="mainMenu">
+                <button onclick="mostrarInicio();"">Inicio</button>
+                <button onclick="mostrarTablas();"">Tablas</button>
+                <button onclick="mostrarVideo();"">Video</button>
+                <button onclick="mostrarFormulario();"">Formulario</button>
+        </div>
+        <div id="mostrarMierda">
+            <div id="cInicio">                
+                <p>
+                    <br>
+                    Phasmophobia es un juego con la temática de cazar fantasmas, ya sea en solitario o multijugador, que se hizo famoso en otoño de 2020 gracias a sus innovativas mecánicas. El juego toma ventaja de chat de voz por proximidad, con el cual los jugadores pueden comunicarse entre si y con un fantasma enemigo, controlado por la I.A, dando para una experiencia inmersiva y espeluznante.
+                </p>
+                <p>
+                    <br>
+                    RESEÑAS GENERALES: Extremadamente positivas (394,290) <br>
+                    FECHA DE LANZAMIENTO: 18 SEP 2020 <br>
+                    DESARROLLADOR: Kinetic Games <br>
+                    EDITOR: Kinetic Games <br>
+                </p>
+            </div>
+            <div id="cTablas">
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Telefono</th>
+                        <th>Correo</th>
+                    </tr>
+                    <tr>
+                        <td>Roberto</td>
+                        <td>17</td>
+                        <td>85931279523</td>
+                        <td>aerigjagrae@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Marcos</td>
+                        <td>20</td>
+                        <td>47831894312</td>
+                        <td>rh8gu2huqu@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <tD>Mustafa</tD>
+                        <tD>48</tD>
+                        <tD>09849182941</tD>
+                        <tD>oqoqoqoqoqo@yahoo.com</tD>
+                    </tr>
+                    <tr>
+                        <td>Jose Angel</td>
+                        <td>20</td>
+                        <td>30261551771</td>
+                        <td>Comparacion0010021000@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Julio</td>
+                        <td>39</td>
+                        <td>66618829904</td>
+                        <td>joselobo2@outlook.com</td>
+                    </tr>
+                    <tr>
+                        <td>Lino</td>
+                        <td>50</td>
+                        <td>10008670003</td>
+                        <td>tractores24@yahoo.com</td>
+                    </tr>
+                </table>
+                
+                
+            </div>
+            <div id="cVideo">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lacpaX6kyxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="cFormulario">
+                <label for="Name">Nombre</label>
+                <input type="text" id="lName"> <br>
+                <label for="Dir">Direccion</label>
+                <input type="text" id="lDir"> <br>
+                <label for="Tel">Telefono</label>
+                <input type="text" id="lTel"> <br>
+                <label for="eMail">Correo</label>
+                <input type="text" id="lMail"> <br>
+                <label for="City">Ciudad</label>
+                <input type="text" id="lCity"> <br>
+                <label for="Age">Edad</label>
+                <input type="text" id="lAge"> <br>
+                <button id="bEnviar" onclick="verificarCampos()">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <div id="pie">
+        <p>Autor: Johan Sanchez</p>
+    </div>
+<script>
+
+    var inicio = document.getElementById("cInicio");
+    var tablas = document.getElementById("cTablas");
+    var video = document.getElementById("cVideo");
+    var formulario = document.getElementById("cFormulario");
+
+    function mostrarInicio(){
+        inicio.style.display="block";
+
+        tablas.style.display="none";
+        video.style.display="none";
+        formulario.style.display="none";
+    }
+
+    function mostrarTablas(){
+        //  Muestra formTablas
+        tablas.style.display="block";
+        //  Oculta los otros form
+        inicio.style.display="none";
+        video.style.display="none";
+        formulario.style.display="none";
+    }
+
+    function mostrarVideo(){
+        video.style.display="block";
+
+        inicio.style.display="none";
+        tablas.style.display="none";
+        formulario.style.display="none";
+    }
+
+    function mostrarFormulario(){
+        formulario.style.display="block";
+
+        inicio.style.display="none";
+        video.style.display="none";
+        tablas.style.display="none";
+    }
+
+    function verificarCampos(){
+        if(document.getElementById('lName').value == ""){
+            alert("Ingrese un nombre");
+        }
+
+        if(document.getElementById('lDir').value == ""){
+            alert("Ingrese una direccion");
+        }
+        if(document.getElementById('lTel').value == ""){
+            alert("Ingrese un telefono");
+        }
+        if(document.getElementById('lMail').value == ""){
+            alert("Ingrese un eMail");
+        }
+        if(document.getElementById('lCity').value == ""){
+            alert("Ingrese una ciudad");
+        }
+        if(document.getElementById('lAge').value == ""){
+            alert("Ingrese una edad");
+        }
+    }
+  
+</script>
+
+</body>
+</html>

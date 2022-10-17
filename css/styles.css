@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+#mainHeader{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#mainListHeader{
+    padding: 0% 20%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24pt;
+    font-weight: 900;
+}
+
+#mainListHeader button{
+
+}
+
+#mainBanner{
+    width: 100%;
+    height: 200px;
+}
+
+#mainBanner img{
+    width: 100%;
+}
+
+#mainContenedor{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+#mainMenu{
+    font-size: 20pt;
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin-top: 60px;
+    background-color: black;
+}
+
+button{
+    display: flex;
+    font-family: 'Outfit';
+    font-size: 18pt;
+    color: white;
+    background-color: transparent;
+}
+
+button:hover{
+    cursor:pointer;
+    color: red;
+}
+#mostrarMierda{
+    float: right;
+    margin-top: 60px;
+    width: auto;
+    height: 600px;
+}
+
+#mostrarMierda div{
+    width: 100%;
+    height: 100%;
+    background-color: #1E1E1E;
+}
+
+#cInicio p{
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20pt;
+    text-align: justify;
+}
+
+#cTablas table{
+    padding-top: 140px;
+    font-size: 20pt;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+#cVideo{
+    display: none;
+}
+
+#cTablas{
+    display: none;
+}
+
+#cFormulario{
+    padding-top: 60px;
+    padding-left: 40%;  
+    display:none;
+}
+
+#cFormulario button{
+    margin: 17%;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15pt;
+}
+
+#cFormulario input{
+    font-family: 'Outfit', sans-serif;
+    font-size: 14pt;
+}
+
+#pie p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20pt;
+    text-align: center;
+}
